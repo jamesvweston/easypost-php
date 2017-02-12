@@ -18,7 +18,7 @@ use jamesvweston\EasyPost\Api\ShipmentApi;
 use jamesvweston\EasyPost\Api\TrackerApi;
 use jamesvweston\EasyPost\Api\UserApi;
 
-class EasyPostIntegration
+class EasyPostClient
 {
 
     /**
