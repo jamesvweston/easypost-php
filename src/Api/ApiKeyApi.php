@@ -21,6 +21,4 @@ class ApiKeyApi extends BaseApi
 
     }
 
-
-
 }
