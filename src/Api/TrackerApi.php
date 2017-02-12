@@ -1,11 +1,11 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
-use jamesvweston\EasyPost\EasyPost\Models\Requests\CreateEasyPostTracker;
-use jamesvweston\EasyPost\EasyPost\Models\Requests\GetEasyPostTrackers;
-use jamesvweston\EasyPost\EasyPost\Models\Responses\EasyPostTracker;
+use jamesvweston\EasyPost\Models\Requests\CreateEasyPostTracker;
+use jamesvweston\EasyPost\Models\Requests\GetEasyPostTrackers;
+use jamesvweston\EasyPost\Models\Responses\EasyPostTracker;
 use jamesvweston\Utilities\ArrayUtil AS AU;
 
 class TrackerApi extends BaseApi

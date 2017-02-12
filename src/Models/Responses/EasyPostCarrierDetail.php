@@ -1,9 +1,9 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Models\Responses;
+namespace jamesvweston\EasyPost\Models\Responses;
 
 
-use jamesvweston\EasyPost\EasyPost\Traits\SimpleSerialize;
+use jamesvweston\EasyPost\Traits\SimpleSerialize;
 use jamesvweston\Utilities\ArrayUtil AS AU;
 
 class EasyPostCarrierDetail

@@ -1,13 +1,13 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Models\Requests;
-use jamesvweston\EasyPost\EasyPost\Traits\SimpleSerialize;
+namespace jamesvweston\EasyPost\Models\Requests;
+use jamesvweston\EasyPost\Traits\SimpleSerialize;
 
 
 /**
  * @see https://www.easypost.com/docs/api.html#retrieve-a-list-of-a-trackers
  * Class GetEasyPostTrackers
- * @package jamesvweston\EasyPost\EasyPost\Models\Requests
+ * @package jamesvweston\EasyPost\Models\Requests
  */
 class GetEasyPostTrackers implements \JsonSerializable
 {

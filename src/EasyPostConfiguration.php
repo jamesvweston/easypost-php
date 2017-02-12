@@ -1,12 +1,12 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost;
+namespace jamesvweston\EasyPost;
 
 
 use jamesvweston\Utilities\ArrayUtil AS AU;
 /**
  * Class EasyPostConfiguration
- * @package jamesvweston\EasyPost\EasyPost
+ * @package jamesvweston\EasyPost
  */
 class EasyPostConfiguration
 {

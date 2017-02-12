@@ -1,15 +1,15 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Models\Responses;
+namespace jamesvweston\EasyPost\Models\Responses;
 
 
-use jamesvweston\EasyPost\EasyPost\Traits\SimpleSerialize;
+use jamesvweston\EasyPost\Traits\SimpleSerialize;
 use jamesvweston\Utilities\ArrayUtil AS AU;
 
 /**
  * @see https://www.easypost.com/docs/api.html#api-keys
  * Class ApiKeys
- * @package jamesvweston\EasyPost\EasyPost\Models\Responses
+ * @package jamesvweston\EasyPost\Models\Responses
  */
 class EasyPostApiKeys
 {

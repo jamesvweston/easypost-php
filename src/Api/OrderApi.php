@@ -1,10 +1,10 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
-use jamesvweston\EasyPost\EasyPost\Models\Requests\CreateEasyPostOrder;
-use jamesvweston\EasyPost\EasyPost\Models\Responses\EasyPostOrder;
+use jamesvweston\EasyPost\Models\Requests\CreateEasyPostOrder;
+use jamesvweston\EasyPost\Models\Responses\EasyPostOrder;
 
 class OrderApi extends BaseApi
 {

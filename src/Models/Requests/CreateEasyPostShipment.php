@@ -1,10 +1,10 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Models\Requests;
+namespace jamesvweston\EasyPost\Models\Requests;
 
 
-use jamesvweston\EasyPost\EasyPost\Models\Responses\EasyPostOptions;
-use jamesvweston\EasyPost\EasyPost\Traits\SimpleSerialize;
+use jamesvweston\EasyPost\Models\Responses\EasyPostOptions;
+use jamesvweston\EasyPost\Traits\SimpleSerialize;
 
 class CreateEasyPostShipment implements \JsonSerializable
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
-use jamesvweston\EasyPost\EasyPost\Models\Requests\CreateEasyPostAddress;
-use jamesvweston\EasyPost\EasyPost\Models\Responses\EasyPostAddress;
+use jamesvweston\EasyPost\Models\Requests\CreateEasyPostAddress;
+use jamesvweston\EasyPost\Models\Responses\EasyPostAddress;
 
 class AddressApi extends BaseApi
 {

@@ -1,22 +1,22 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost;
+namespace jamesvweston\EasyPost;
 
 
-use jamesvweston\EasyPost\EasyPost\Api\AddressApi;
-use jamesvweston\EasyPost\EasyPost\Api\ApiKeyApi;
-use jamesvweston\EasyPost\EasyPost\Api\BatchApi;
-use jamesvweston\EasyPost\EasyPost\Api\CarrierAccountApi;
-use jamesvweston\EasyPost\EasyPost\Api\CarrierTypeApi;
-use jamesvweston\EasyPost\EasyPost\Api\CustomsInfoApi;
-use jamesvweston\EasyPost\EasyPost\Api\CustomsItemApi;
-use jamesvweston\EasyPost\EasyPost\Api\InsuranceApi;
-use jamesvweston\EasyPost\EasyPost\Api\OrderApi;
-use jamesvweston\EasyPost\EasyPost\Api\ParcelApi;
-use jamesvweston\EasyPost\EasyPost\Api\PickupApi;
-use jamesvweston\EasyPost\EasyPost\Api\ShipmentApi;
-use jamesvweston\EasyPost\EasyPost\Api\TrackerApi;
-use jamesvweston\EasyPost\EasyPost\Api\UserApi;
+use jamesvweston\EasyPost\Api\AddressApi;
+use jamesvweston\EasyPost\Api\ApiKeyApi;
+use jamesvweston\EasyPost\Api\BatchApi;
+use jamesvweston\EasyPost\Api\CarrierAccountApi;
+use jamesvweston\EasyPost\Api\CarrierTypeApi;
+use jamesvweston\EasyPost\Api\CustomsInfoApi;
+use jamesvweston\EasyPost\Api\CustomsItemApi;
+use jamesvweston\EasyPost\Api\InsuranceApi;
+use jamesvweston\EasyPost\Api\OrderApi;
+use jamesvweston\EasyPost\Api\ParcelApi;
+use jamesvweston\EasyPost\Api\PickupApi;
+use jamesvweston\EasyPost\Api\ShipmentApi;
+use jamesvweston\EasyPost\Api\TrackerApi;
+use jamesvweston\EasyPost\Api\UserApi;
 
 class EasyPostIntegration
 {

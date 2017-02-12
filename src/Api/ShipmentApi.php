@@ -1,11 +1,11 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
-use jamesvweston\EasyPost\EasyPost\Models\Requests\CreateEasyPostShipment;
-use jamesvweston\EasyPost\EasyPost\Models\Requests\GetEasyPostShipments;
-use jamesvweston\EasyPost\EasyPost\Models\Responses\EasyPostShipment;
+use jamesvweston\EasyPost\Models\Requests\CreateEasyPostShipment;
+use jamesvweston\EasyPost\Models\Requests\GetEasyPostShipments;
+use jamesvweston\EasyPost\Models\Responses\EasyPostShipment;
 use jamesvweston\Utilities\ArrayUtil AS AU;
 
 class ShipmentApi extends BaseApi

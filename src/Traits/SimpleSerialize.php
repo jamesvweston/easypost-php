@@ -1,6 +1,6 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Traits;
+namespace jamesvweston\EasyPost\Traits;
 
 trait SimpleSerialize
 {

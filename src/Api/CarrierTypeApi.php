@@ -1,9 +1,9 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
-use jamesvweston\EasyPost\EasyPost\Models\Responses\EasyPostCarrierType;
+use jamesvweston\EasyPost\Models\Responses\EasyPostCarrierType;
 
 class CarrierTypeApi extends BaseApi
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Exceptions;
+namespace jamesvweston\EasyPost\Exceptions;
 
 
 class EasyPostCustomsInfoException extends EasyPostApiException

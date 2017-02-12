@@ -1,25 +1,25 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
-use jamesvweston\EasyPost\EasyPost\EasyPostConfiguration;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostApiException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostCustomsInfoException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostInvalidAddressException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostInvalidCredentialsException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostPhoneNumberRequiredException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostReferenceRequiredException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostServiceUnavailableException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostUnableToVoidShippedOrderException;
-use jamesvweston\EasyPost\EasyPost\Exceptions\EasyPostUserThrottledException;
+use jamesvweston\EasyPost\EasyPostConfiguration;
+use jamesvweston\EasyPost\Exceptions\EasyPostApiException;
+use jamesvweston\EasyPost\Exceptions\EasyPostCustomsInfoException;
+use jamesvweston\EasyPost\Exceptions\EasyPostInvalidAddressException;
+use jamesvweston\EasyPost\Exceptions\EasyPostInvalidCredentialsException;
+use jamesvweston\EasyPost\Exceptions\EasyPostPhoneNumberRequiredException;
+use jamesvweston\EasyPost\Exceptions\EasyPostReferenceRequiredException;
+use jamesvweston\EasyPost\Exceptions\EasyPostServiceUnavailableException;
+use jamesvweston\EasyPost\Exceptions\EasyPostUnableToVoidShippedOrderException;
+use jamesvweston\EasyPost\Exceptions\EasyPostUserThrottledException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ServerException;
 
 /**
  * Class BaseApi
- * @package jamesvweston\EasyPost\EasyPost\Api
+ * @package jamesvweston\EasyPost\Api
  */
 class BaseApi
 {

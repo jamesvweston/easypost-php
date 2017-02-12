@@ -1,6 +1,6 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
 class ApiKeyApi extends BaseApi

@@ -1,10 +1,10 @@
 <?php
 
-namespace jamesvweston\EasyPost\EasyPost\Api;
+namespace jamesvweston\EasyPost\Api;
 
 
-use jamesvweston\EasyPost\EasyPost\Models\Requests\CreateEasyPostParcel;
-use jamesvweston\EasyPost\EasyPost\Models\Responses\EasyPostParcel;
+use jamesvweston\EasyPost\Models\Requests\CreateEasyPostParcel;
+use jamesvweston\EasyPost\Models\Responses\EasyPostParcel;
 
 
 class ParcelApi extends BaseApi

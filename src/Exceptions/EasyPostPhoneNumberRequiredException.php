@@ -6,7 +6,7 @@
  * Time: 12:06 AM
  */
 
-namespace jamesvweston\EasyPost\EasyPost\Exceptions;
+namespace jamesvweston\EasyPost\Exceptions;
 
 
 class EasyPostPhoneNumberRequiredException extends EasyPostApiException
