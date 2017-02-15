@@ -139,6 +139,7 @@ class BaseApi
         $errorMessage           = isset($errorMessage['error']) ? $errorMessage['error'] : null;
         $message                = isset($errorMessage['message']) ? $errorMessage['message'] : null;
 
+
         if ($exception instanceof ClientException)
         {
             if ($code == 401)
@@ -168,11 +169,8 @@ class BaseApi
                 $mappedException = new EasyPostServiceUnavailableException('The carrier API is not responding');
         }
 
-        if (is_array($errorMessage))
-            throw new \Exception(json_encode($errorMessage));
-
         if (is_null($mappedException))
-            $mappedException    = new EasyPostApiException($errorMessage, $code);
+            $mappedException    = new EasyPostApiException($message, $code);
 
         return $mappedException;
     }
