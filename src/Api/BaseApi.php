@@ -8,6 +8,7 @@ use jamesvweston\EasyPost\Exceptions\EasyPostApiException;
 use jamesvweston\EasyPost\Exceptions\EasyPostCustomsInfoException;
 use jamesvweston\EasyPost\Exceptions\EasyPostInvalidAddressException;
 use jamesvweston\EasyPost\Exceptions\EasyPostInvalidCredentialsException;
+use jamesvweston\EasyPost\Exceptions\EasyPostInvalidStreet1Exception;
 use jamesvweston\EasyPost\Exceptions\EasyPostPhoneNumberRequiredException;
 use jamesvweston\EasyPost\Exceptions\EasyPostReferenceRequiredException;
 use jamesvweston\EasyPost\Exceptions\EasyPostServiceUnavailableException;
@@ -127,6 +128,7 @@ class BaseApi
      * @return  EasyPostReferenceRequiredException
      * @return  EasyPostInvalidAddressException
      * @return  EasyPostUserThrottledException
+     * @return  EasyPostInvalidStreet1Exception
      * @return  EasyPostUnableToVoidShippedOrderException
      * @return  EasyPostApiException
      */
@@ -144,6 +146,8 @@ class BaseApi
         {
             if (preg_match("/Invalid Authentication Information/", $message))
                 $mappedException = new EasyPostInvalidCredentialsException();
+            else if (preg_match("/Invalid Recipient StreetLine 1/", $message))
+                $mappedException = new EasyPostInvalidStreet1Exception();
             else if (
                 preg_match("/phoneNumber is required/", $message) ||
                 preg_match("/Missing or invalid ship to phone number/", $message) ||
