@@ -12,6 +12,7 @@ use jamesvweston\EasyPost\Exceptions\EasyPostInvalidStreet1Exception;
 use jamesvweston\EasyPost\Exceptions\EasyPostPhoneNumberRequiredException;
 use jamesvweston\EasyPost\Exceptions\EasyPostReferenceRequiredException;
 use jamesvweston\EasyPost\Exceptions\EasyPostServiceUnavailableException;
+use jamesvweston\EasyPost\Exceptions\EasyPostShipmentWeightException;
 use jamesvweston\EasyPost\Exceptions\EasyPostUnableToVoidShippedOrderException;
 use jamesvweston\EasyPost\Exceptions\EasyPostUserThrottledException;
 use GuzzleHttp\Client;
@@ -146,6 +147,8 @@ class BaseApi
         {
             if (preg_match("/Invalid Authentication Information/", $message))
                 $mappedException = new EasyPostInvalidCredentialsException();
+            else if (preg_match("/Total commodities weight is greater than package or shipment weight/", $message))
+                $mappedException = new EasyPostShipmentWeightException();
             else if (preg_match("/Invalid Recipient StreetLine 1/", $message))
                 $mappedException = new EasyPostInvalidStreet1Exception();
             else if (
