@@ -147,7 +147,9 @@ class BaseApi
         {
             if (preg_match("/Invalid Authentication Information/", $message))
                 $mappedException = new EasyPostInvalidCredentialsException();
-            else if (preg_match("/Total commodities weight is greater than package or shipment weight/", $message))
+            else if (
+                preg_match("/Total commodities weight is greater than package or shipment weight/", $message) ||
+                preg_match("/Total package weight must be equal to or greater than the sum of the item weights/", $message))
                 $mappedException = new EasyPostShipmentWeightException();
             else if (preg_match("/Invalid Recipient StreetLine 1/", $message))
                 $mappedException = new EasyPostInvalidStreet1Exception();
