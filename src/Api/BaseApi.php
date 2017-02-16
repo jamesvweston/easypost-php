@@ -142,7 +142,7 @@ class BaseApi
 
         if ($exception instanceof ClientException)
         {
-            if ($code == 401 || preg_match("/Invalid Authentication Information/", $message))
+            if (preg_match("/Invalid Authentication Information/", $message))
                 $mappedException = new EasyPostInvalidCredentialsException();
             else if (
                 preg_match("/phoneNumber is required/", $message) ||
