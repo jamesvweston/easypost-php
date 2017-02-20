@@ -11,6 +11,7 @@ use jamesvweston\EasyPost\Exceptions\EasyPostInvalidCredentialsException;
 use jamesvweston\EasyPost\Exceptions\EasyPostInvalidStreet1Exception;
 use jamesvweston\EasyPost\Exceptions\EasyPostPhoneNumberRequiredException;
 use jamesvweston\EasyPost\Exceptions\EasyPostReferenceRequiredException;
+use jamesvweston\EasyPost\Exceptions\EasyPostServiceResidentialException;
 use jamesvweston\EasyPost\Exceptions\EasyPostServiceUnavailableException;
 use jamesvweston\EasyPost\Exceptions\EasyPostShipmentWeightException;
 use jamesvweston\EasyPost\Exceptions\EasyPostUnableToVoidShippedOrderException;
@@ -131,6 +132,7 @@ class BaseApi
      * @return  EasyPostUserThrottledException
      * @return  EasyPostInvalidStreet1Exception
      * @return  EasyPostUnableToVoidShippedOrderException
+     * @return  EasyPostServiceResidentialException
      * @return  EasyPostApiException
      */
     protected function mapException ($exception)
@@ -153,6 +155,8 @@ class BaseApi
                 $mappedException = new EasyPostShipmentWeightException();
             else if (preg_match("/Invalid Recipient StreetLine 1/", $message))
                 $mappedException = new EasyPostInvalidStreet1Exception();
+            else if (preg_match("/selected service is not available to residential/", $message))
+                $mappedException = new EasyPostServiceResidentialException();
             else if (
                 preg_match("/phoneNumber is required/", $message) ||
                 preg_match("/Missing or invalid ship to phone number/", $message) ||
