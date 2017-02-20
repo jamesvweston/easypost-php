@@ -170,6 +170,11 @@ class BaseApi
             }
             else if (preg_match("/Address is too ambiguous/", $message))
                 $mappedException = new EasyPostInvalidAddressException();
+
+            else if (preg_match("/The address is not a deliverable location according to the US Postal Service/", $message))
+                $mappedException = new EasyPostInvalidAddressException('The address is not a deliverable location according to the US Postal Service');
+
+
             else if (preg_match("/The maximum number of user access attempts was exceeded/", $message) ||
                 preg_match("/The UserId is currently locked out/", $message))
                 $mappedException = new EasyPostUserThrottledException($message, $code);
