@@ -183,7 +183,9 @@ class BaseApi
         }
         else if ($exception instanceof ServerException)
         {
-            if (preg_match("/carrier is not responding/", $message))
+            if (
+                preg_match("/carrier is not responding/", $message) ||
+                preg_match("/XML Shipping System is unavailable/", $message))
                 $mappedException = new EasyPostServiceUnavailableException('The carrier API is not responding');
         }
 
